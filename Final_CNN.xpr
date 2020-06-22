@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2015.2 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="5" Path="D:/Final_CNN/Final_CNN.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="85b114234dba43b8b81af11bd328adaa"/>
+    <Option Name="Part" Val="xcku040-ffva1156-2-e"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val="xilinx.com:kcu105:part0:1.0"/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="EnableCoreContainerForIPI" Val="FALSE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/new/fp_mul.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/fp_mul.sv"/>
+          <Attr Name="ImportTime" Val="1591560331"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/fp_add.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/fp_add.v"/>
+          <Attr Name="ImportTime" Val="1591637201"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/tanh.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/tanh.v"/>
+          <Attr Name="ImportTime" Val="1591565523"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/softmax_fn.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/softmax_fn.v"/>
+          <Attr Name="ImportTime" Val="1591717658"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/max.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/max.v"/>
+          <Attr Name="ImportTime" Val="1591717205"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/fp_avg.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/BasicConv.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/BasicConv.sv"/>
+          <Attr Name="ImportTime" Val="1591637094"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/tanh_2D.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/tanh_2D.sv"/>
+          <Attr Name="ImportTime" Val="1591538215"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/softmaxLayer.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/softmaxLayer.sv"/>
+          <Attr Name="ImportTime" Val="1591723105"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/read.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/PE_FC_ANN.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/PE_FC_ANN.v"/>
+          <Attr Name="ImportTime" Val="1591719053"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/comparingSoftmax.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/comparingSoftmax.sv"/>
+          <Attr Name="ImportTime" Val="1591717993"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/AvgLayer.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/AvgLayer.sv"/>
+          <Attr Name="ImportTime" Val="1591531802"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Conv1F.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/Conv1F.sv"/>
+          <Attr Name="ImportTime" Val="1591560337"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/tanh_2D_parallel_filters.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/tanh_2D_parallel_filters.sv"/>
+          <Attr Name="ImportTime" Val="1591654183"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/softmax_max_index.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/softmax_max_index.sv"/>
+          <Attr Name="ImportTime" Val="1591723032"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FC_CNN.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/FC_CNN.v"/>
+          <Attr Name="ImportTime" Val="1591718598"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ConvMF.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/ConvMF.sv"/>
+          <Attr Name="ImportTime" Val="1591560332"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/avg_3D.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/avg_3D.sv"/>
+          <Attr Name="ImportTime" Val="1591640413"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/LeNet_CNN.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/LeNet_CNN.sv"/>
+          <Attr Name="ImportTime" Val="1591653818"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/read3D.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/LeNet_Testbench.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/fp_avg_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/fp_avg_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591567643"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ConvMF_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/ConvMF_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591560335"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Conv1F_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/Conv1F_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591560338"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/avg_3D_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/avg_3D_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591536838"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/avg_2D_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/avg_2D_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591531818"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/BasicConv_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Downloads/Final_Assessment_CNN/Final_Assessment_CNN/Final_Assessment_CNN.srcs/sources_1/new/BasicConv_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591560336"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/testbench_comparingSoftmax.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/testbench_comparingSoftmax.v"/>
+          <Attr Name="ImportTime" Val="1591716192"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/testbench_max.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/testbench_max.v"/>
+          <Attr Name="ImportTime" Val="1591716193"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/testbench_softmaxLayer.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/testbench_softmaxLayer.v"/>
+          <Attr Name="ImportTime" Val="1591716194"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/project_1/testbench_softmax.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/project_1/testbench_softmax.v"/>
+          <Attr Name="ImportTime" Val="1591716198"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/testbench_SoftmaxMaxIndex.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Tanh Tb/tanh_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/Tanh Tb/tanh_tb.v"/>
+          <Attr Name="ImportTime" Val="1591728886"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Tanh Tb/tanh_2d_filters_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/Tanh Tb/tanh_2d_filters_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591728887"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Tanh Tb/tanh_2D_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="C:/Users/shoro/Desktop/Shit/Junior/Logic 2/Tanh Tb/tanh_2D_tb.sv"/>
+          <Attr Name="ImportTime" Val="1591728888"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="LeNet_CNN"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="LeNet_Testbench"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xcku040-ffva1156-2-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xcku040-ffva1156-2-e" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" SynthRun="synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+</Project>
