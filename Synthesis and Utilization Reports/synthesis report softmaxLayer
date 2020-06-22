@@ -1,0 +1,708 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Jun 08 22:17:24 2020
+# Process ID: 13256
+# Log file: C:/Users/Maria/Desktop/synth/projectt/projectt.runs/synth_1/softmaxLayer.vds
+# Journal file: C:/Users/Maria/Desktop/synth/projectt/projectt.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source softmaxLayer.tcl -notrace
+Command: synth_design -top softmaxLayer -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 265.141 ; gain = 52.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'softmaxLayer' [C:/Users/Maria/Desktop/synth/projectt/projectt.srcs/sources_1/new/softmaxLayer.sv:23]
+	Parameter datawidth bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'softmax_fn' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/softmax_fn.v:23]
+	Parameter datawidth bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fp_add' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fp_add' (1#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:2]
+INFO: [Synth 8-638] synthesizing module 'fpmul' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_mul.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fpmul' (2#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_mul.v:2]
+INFO: [Synth 8-256] done synthesizing module 'softmax_fn' (3#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/softmax_fn.v:23]
+INFO: [Synth 8-256] done synthesizing module 'softmaxLayer' (4#1) [C:/Users/Maria/Desktop/synth/projectt/projectt.srcs/sources_1/new/softmaxLayer.sv:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 299.266 ; gain = 86.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 299.266 ; gain = 86.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 299.266 ; gain = 86.523
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+WARNING: [Synth 8-327] inferring latch for variable 'shift_cnt_reg' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 338.273 ; gain = 125.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |softmax_fn    |          10|     38168|
++------+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 60    
+	   3 Input     25 Bit       Adders := 120   
+	   3 Input      8 Bit       Adders := 340   
+	   4 Input      8 Bit       Adders := 60    
+	   2 Input      8 Bit       Adders := 60    
++---XORs : 
+	   2 Input      1 Bit         XORs := 100   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 380   
+	   2 Input     24 Bit        Muxes := 300   
+	   2 Input     23 Bit        Muxes := 160   
+	   2 Input      8 Bit        Muxes := 3180  
+	  23 Input      8 Bit        Muxes := 120   
+	   2 Input      1 Bit        Muxes := 2940  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fp_add__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmul__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmul__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmul__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmul__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmul__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmul__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmul__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmul__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmul__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmul 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 674.789 ; gain = 462.047
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 676.141 ; gain = 463.398
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 676.141 ; gain = 463.398
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |softmax_fn    |          10|     40596|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmul       | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 810.180 ; gain = 597.438
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 810.180 ; gain = 597.438
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |softmax_fn    |          10|      9999|
++------+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 810.180 ; gain = 597.438
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 810.180 ; gain = 597.438
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |softmax_fn    |          10|      9999|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY8  |   980|
+|3     |DSP48E2 |   200|
+|4     |LUT1    |  2070|
+|5     |LUT2    |  4110|
+|6     |LUT3    |  5660|
+|7     |LUT4    |  6170|
+|8     |LUT5    |  8630|
+|9     |LUT6    | 16090|
+|10    |MUXF7   |    50|
+|11    |FDRE    |   320|
+|12    |LD      |   480|
+|13    |IBUF    |   321|
+|14    |OBUF    |   320|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------+------+
+|      |Instance                     |Module       |Cells |
++------+-----------------------------+-------------+------+
+|1     |top                          |             | 45402|
+|2     |  \genblk1[0].s              |softmax_fn   |  4375|
+|3     |    \genblk1[0].add_12terms  |fp_add_151   |  2204|
+|4     |    \genblk1[0].add_23terms  |fp_add_152   |    43|
+|5     |    \genblk1[0].add_34terms  |fp_add_153   |    29|
+|6     |    \genblk1[0].add_45terms  |fp_add_154   |    42|
+|7     |    \genblk1[0].add_56terms  |fp_add_155   |    95|
+|8     |    \genblk1[0].add_67terms  |fp_add_156   |   807|
+|9     |    \genblk1[0].mull_2       |fpmul_157    |    89|
+|10    |    \genblk1[0].mull_3       |fpmul_158    |    78|
+|11    |    \genblk1[0].mull_4       |fpmul_159    |    51|
+|12    |    \genblk1[0].mull_5       |fpmul_160    |    72|
+|13    |    \genblk1[0].mull_6       |fpmul_161    |    65|
+|14    |    \genblk1[0].mull_x2      |fpmul_162    |   415|
+|15    |    \genblk1[0].mull_x3      |fpmul_163    |    35|
+|16    |    \genblk1[0].mull_x4      |fpmul_164    |    99|
+|17    |    \genblk1[0].mull_x5      |fpmul_165    |    56|
+|18    |    \genblk1[0].mull_x6      |fpmul_166    |    46|
+|19    |  \genblk1[1].s              |softmax_fn_0 |  4375|
+|20    |    \genblk1[0].add_12terms  |fp_add_135   |  2204|
+|21    |    \genblk1[0].add_23terms  |fp_add_136   |    43|
+|22    |    \genblk1[0].add_34terms  |fp_add_137   |    29|
+|23    |    \genblk1[0].add_45terms  |fp_add_138   |    42|
+|24    |    \genblk1[0].add_56terms  |fp_add_139   |    95|
+|25    |    \genblk1[0].add_67terms  |fp_add_140   |   807|
+|26    |    \genblk1[0].mull_2       |fpmul_141    |    89|
+|27    |    \genblk1[0].mull_3       |fpmul_142    |    78|
+|28    |    \genblk1[0].mull_4       |fpmul_143    |    51|
+|29    |    \genblk1[0].mull_5       |fpmul_144    |    72|
+|30    |    \genblk1[0].mull_6       |fpmul_145    |    65|
+|31    |    \genblk1[0].mull_x2      |fpmul_146    |   415|
+|32    |    \genblk1[0].mull_x3      |fpmul_147    |    35|
+|33    |    \genblk1[0].mull_x4      |fpmul_148    |    99|
+|34    |    \genblk1[0].mull_x5      |fpmul_149    |    56|
+|35    |    \genblk1[0].mull_x6      |fpmul_150    |    46|
+|36    |  \genblk1[2].s              |softmax_fn_1 |  4375|
+|37    |    \genblk1[0].add_12terms  |fp_add_119   |  2204|
+|38    |    \genblk1[0].add_23terms  |fp_add_120   |    43|
+|39    |    \genblk1[0].add_34terms  |fp_add_121   |    29|
+|40    |    \genblk1[0].add_45terms  |fp_add_122   |    42|
+|41    |    \genblk1[0].add_56terms  |fp_add_123   |    95|
+|42    |    \genblk1[0].add_67terms  |fp_add_124   |   807|
+|43    |    \genblk1[0].mull_2       |fpmul_125    |    89|
+|44    |    \genblk1[0].mull_3       |fpmul_126    |    78|
+|45    |    \genblk1[0].mull_4       |fpmul_127    |    51|
+|46    |    \genblk1[0].mull_5       |fpmul_128    |    72|
+|47    |    \genblk1[0].mull_6       |fpmul_129    |    65|
+|48    |    \genblk1[0].mull_x2      |fpmul_130    |   415|
+|49    |    \genblk1[0].mull_x3      |fpmul_131    |    35|
+|50    |    \genblk1[0].mull_x4      |fpmul_132    |    99|
+|51    |    \genblk1[0].mull_x5      |fpmul_133    |    56|
+|52    |    \genblk1[0].mull_x6      |fpmul_134    |    46|
+|53    |  \genblk1[3].s              |softmax_fn_2 |  4375|
+|54    |    \genblk1[0].add_12terms  |fp_add_103   |  2204|
+|55    |    \genblk1[0].add_23terms  |fp_add_104   |    43|
+|56    |    \genblk1[0].add_34terms  |fp_add_105   |    29|
+|57    |    \genblk1[0].add_45terms  |fp_add_106   |    42|
+|58    |    \genblk1[0].add_56terms  |fp_add_107   |    95|
+|59    |    \genblk1[0].add_67terms  |fp_add_108   |   807|
+|60    |    \genblk1[0].mull_2       |fpmul_109    |    89|
+|61    |    \genblk1[0].mull_3       |fpmul_110    |    78|
+|62    |    \genblk1[0].mull_4       |fpmul_111    |    51|
+|63    |    \genblk1[0].mull_5       |fpmul_112    |    72|
+|64    |    \genblk1[0].mull_6       |fpmul_113    |    65|
+|65    |    \genblk1[0].mull_x2      |fpmul_114    |   415|
+|66    |    \genblk1[0].mull_x3      |fpmul_115    |    35|
+|67    |    \genblk1[0].mull_x4      |fpmul_116    |    99|
+|68    |    \genblk1[0].mull_x5      |fpmul_117    |    56|
+|69    |    \genblk1[0].mull_x6      |fpmul_118    |    46|
+|70    |  \genblk1[4].s              |softmax_fn_3 |  4375|
+|71    |    \genblk1[0].add_12terms  |fp_add_87    |  2204|
+|72    |    \genblk1[0].add_23terms  |fp_add_88    |    43|
+|73    |    \genblk1[0].add_34terms  |fp_add_89    |    29|
+|74    |    \genblk1[0].add_45terms  |fp_add_90    |    42|
+|75    |    \genblk1[0].add_56terms  |fp_add_91    |    95|
+|76    |    \genblk1[0].add_67terms  |fp_add_92    |   807|
+|77    |    \genblk1[0].mull_2       |fpmul_93     |    89|
+|78    |    \genblk1[0].mull_3       |fpmul_94     |    78|
+|79    |    \genblk1[0].mull_4       |fpmul_95     |    51|
+|80    |    \genblk1[0].mull_5       |fpmul_96     |    72|
+|81    |    \genblk1[0].mull_6       |fpmul_97     |    65|
+|82    |    \genblk1[0].mull_x2      |fpmul_98     |   415|
+|83    |    \genblk1[0].mull_x3      |fpmul_99     |    35|
+|84    |    \genblk1[0].mull_x4      |fpmul_100    |    99|
+|85    |    \genblk1[0].mull_x5      |fpmul_101    |    56|
+|86    |    \genblk1[0].mull_x6      |fpmul_102    |    46|
+|87    |  \genblk1[5].s              |softmax_fn_4 |  4375|
+|88    |    \genblk1[0].add_12terms  |fp_add_71    |  2204|
+|89    |    \genblk1[0].add_23terms  |fp_add_72    |    43|
+|90    |    \genblk1[0].add_34terms  |fp_add_73    |    29|
+|91    |    \genblk1[0].add_45terms  |fp_add_74    |    42|
+|92    |    \genblk1[0].add_56terms  |fp_add_75    |    95|
+|93    |    \genblk1[0].add_67terms  |fp_add_76    |   807|
+|94    |    \genblk1[0].mull_2       |fpmul_77     |    89|
+|95    |    \genblk1[0].mull_3       |fpmul_78     |    78|
+|96    |    \genblk1[0].mull_4       |fpmul_79     |    51|
+|97    |    \genblk1[0].mull_5       |fpmul_80     |    72|
+|98    |    \genblk1[0].mull_6       |fpmul_81     |    65|
+|99    |    \genblk1[0].mull_x2      |fpmul_82     |   415|
+|100   |    \genblk1[0].mull_x3      |fpmul_83     |    35|
+|101   |    \genblk1[0].mull_x4      |fpmul_84     |    99|
+|102   |    \genblk1[0].mull_x5      |fpmul_85     |    56|
+|103   |    \genblk1[0].mull_x6      |fpmul_86     |    46|
+|104   |  \genblk1[6].s              |softmax_fn_5 |  4375|
+|105   |    \genblk1[0].add_12terms  |fp_add_55    |  2204|
+|106   |    \genblk1[0].add_23terms  |fp_add_56    |    43|
+|107   |    \genblk1[0].add_34terms  |fp_add_57    |    29|
+|108   |    \genblk1[0].add_45terms  |fp_add_58    |    42|
+|109   |    \genblk1[0].add_56terms  |fp_add_59    |    95|
+|110   |    \genblk1[0].add_67terms  |fp_add_60    |   807|
+|111   |    \genblk1[0].mull_2       |fpmul_61     |    89|
+|112   |    \genblk1[0].mull_3       |fpmul_62     |    78|
+|113   |    \genblk1[0].mull_4       |fpmul_63     |    51|
+|114   |    \genblk1[0].mull_5       |fpmul_64     |    72|
+|115   |    \genblk1[0].mull_6       |fpmul_65     |    65|
+|116   |    \genblk1[0].mull_x2      |fpmul_66     |   415|
+|117   |    \genblk1[0].mull_x3      |fpmul_67     |    35|
+|118   |    \genblk1[0].mull_x4      |fpmul_68     |    99|
+|119   |    \genblk1[0].mull_x5      |fpmul_69     |    56|
+|120   |    \genblk1[0].mull_x6      |fpmul_70     |    46|
+|121   |  \genblk1[7].s              |softmax_fn_6 |  4375|
+|122   |    \genblk1[0].add_12terms  |fp_add_39    |  2204|
+|123   |    \genblk1[0].add_23terms  |fp_add_40    |    43|
+|124   |    \genblk1[0].add_34terms  |fp_add_41    |    29|
+|125   |    \genblk1[0].add_45terms  |fp_add_42    |    42|
+|126   |    \genblk1[0].add_56terms  |fp_add_43    |    95|
+|127   |    \genblk1[0].add_67terms  |fp_add_44    |   807|
+|128   |    \genblk1[0].mull_2       |fpmul_45     |    89|
+|129   |    \genblk1[0].mull_3       |fpmul_46     |    78|
+|130   |    \genblk1[0].mull_4       |fpmul_47     |    51|
+|131   |    \genblk1[0].mull_5       |fpmul_48     |    72|
+|132   |    \genblk1[0].mull_6       |fpmul_49     |    65|
+|133   |    \genblk1[0].mull_x2      |fpmul_50     |   415|
+|134   |    \genblk1[0].mull_x3      |fpmul_51     |    35|
+|135   |    \genblk1[0].mull_x4      |fpmul_52     |    99|
+|136   |    \genblk1[0].mull_x5      |fpmul_53     |    56|
+|137   |    \genblk1[0].mull_x6      |fpmul_54     |    46|
+|138   |  \genblk1[8].s              |softmax_fn_7 |  4375|
+|139   |    \genblk1[0].add_12terms  |fp_add_23    |  2204|
+|140   |    \genblk1[0].add_23terms  |fp_add_24    |    43|
+|141   |    \genblk1[0].add_34terms  |fp_add_25    |    29|
+|142   |    \genblk1[0].add_45terms  |fp_add_26    |    42|
+|143   |    \genblk1[0].add_56terms  |fp_add_27    |    95|
+|144   |    \genblk1[0].add_67terms  |fp_add_28    |   807|
+|145   |    \genblk1[0].mull_2       |fpmul_29     |    89|
+|146   |    \genblk1[0].mull_3       |fpmul_30     |    78|
+|147   |    \genblk1[0].mull_4       |fpmul_31     |    51|
+|148   |    \genblk1[0].mull_5       |fpmul_32     |    72|
+|149   |    \genblk1[0].mull_6       |fpmul_33     |    65|
+|150   |    \genblk1[0].mull_x2      |fpmul_34     |   415|
+|151   |    \genblk1[0].mull_x3      |fpmul_35     |    35|
+|152   |    \genblk1[0].mull_x4      |fpmul_36     |    99|
+|153   |    \genblk1[0].mull_x5      |fpmul_37     |    56|
+|154   |    \genblk1[0].mull_x6      |fpmul_38     |    46|
+|155   |  \genblk1[9].s              |softmax_fn_8 |  4375|
+|156   |    \genblk1[0].add_12terms  |fp_add       |  2204|
+|157   |    \genblk1[0].add_23terms  |fp_add_9     |    43|
+|158   |    \genblk1[0].add_34terms  |fp_add_10    |    29|
+|159   |    \genblk1[0].add_45terms  |fp_add_11    |    42|
+|160   |    \genblk1[0].add_56terms  |fp_add_12    |    95|
+|161   |    \genblk1[0].add_67terms  |fp_add_13    |   807|
+|162   |    \genblk1[0].mull_2       |fpmul        |    89|
+|163   |    \genblk1[0].mull_3       |fpmul_14     |    78|
+|164   |    \genblk1[0].mull_4       |fpmul_15     |    51|
+|165   |    \genblk1[0].mull_5       |fpmul_16     |    72|
+|166   |    \genblk1[0].mull_6       |fpmul_17     |    65|
+|167   |    \genblk1[0].mull_x2      |fpmul_18     |   415|
+|168   |    \genblk1[0].mull_x3      |fpmul_19     |    35|
+|169   |    \genblk1[0].mull_x4      |fpmul_20     |    99|
+|170   |    \genblk1[0].mull_x5      |fpmul_21     |    56|
+|171   |    \genblk1[0].mull_x6      |fpmul_22     |    46|
++------+-----------------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 923.250 ; gain = 710.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 923.250 ; gain = 689.180
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 923.250 ; gain = 710.508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1002 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 320 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1002 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 200 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 321 instances
+  LD => LDCE: 480 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 941.668 ; gain = 719.563
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 950.180 ; gain = 8.512
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.557 . Memory (MB): peak = 950.180 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 08 22:18:55 2020...

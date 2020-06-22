@@ -1,0 +1,870 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Jun 07 15:59:17 2020
+# Process ID: 17176
+# Log file: C:/Users/shoro/Desktop/project_2/project_2.runs/synth_1/tanh_2D_1f.vds
+# Journal file: C:/Users/shoro/Desktop/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source tanh_2D_1f.tcl -notrace
+Command: synth_design -top tanh_2D_1f -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 270.555 ; gain = 47.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tanh_2D_1f' [C:/Users/shoro/Downloads/tanh/tanh_2D.sv:1]
+	Parameter datawidth bound to: 32 - type: integer 
+	Parameter image_size bound to: 28 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'tanh' [C:/Users/shoro/Downloads/tanh/tanh.v:2]
+	Parameter datawidth bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fpmull' [C:/Users/shoro/Downloads/tanh/fpmull.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fpmull' (1#1) [C:/Users/shoro/Downloads/tanh/fpmull.v:1]
+INFO: [Synth 8-638] synthesizing module 'fp_add' [C:/Users/shoro/Downloads/tanh/fp_add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fp_add' (2#1) [C:/Users/shoro/Downloads/tanh/fp_add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'tanh' (3#1) [C:/Users/shoro/Downloads/tanh/tanh.v:2]
+INFO: [Synth 8-256] done synthesizing module 'tanh_2D_1f' (4#1) [C:/Users/shoro/Downloads/tanh/tanh_2D.sv:1]
+WARNING: [Synth 8-3331] design tanh_2D_1f has unconnected port enable
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 465.176 ; gain = 242.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 465.176 ; gain = 242.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 465.176 ; gain = 242.371
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][11]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][12]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][13]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][16]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][17]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][18]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][19]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][20]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][21]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][22]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][23]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][24]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][25]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][26]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][27]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "out_tanh_reg[0][27]" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'shift_cnt_reg' [C:/Users/shoro/Downloads/tanh/fp_add.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1194.430 ; gain = 971.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'tanh:/\genblk1[0].multiplier1 ' (fpmull) to 'tanh:/\genblk1[0].multiplier4 '
+INFO: [Synth 8-223] decloning instance 'tanh:/\genblk1[0].multiplier1 ' (fpmull) to 'tanh:/\genblk1[0].multiplier9 '
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |tanh              |           2|     35468|
+|2     |tanh_2D_1f__GCB0  |           1|     31245|
+|3     |tanh_2D_1f__GCB1  |           1|     16098|
+|4     |tanh_2D_1f__GCB2  |           1|     28974|
+|5     |tanh_2D_1f__GCB3  |           1|     22301|
+|6     |tanh_2D_1f__GCB4  |           1|     34897|
+|7     |tanh_2D_1f__GCB5  |           1|     10511|
+|8     |tanh_2D_1f__GCB6  |           1|     32799|
+|9     |tanh_2D_1f__GCB7  |           1|      8768|
+|10    |tanh_2D_1f__GCB8  |           1|     12123|
+|11    |tanh_2D_1f__GCB9  |           1|     26208|
+|12    |tanh_2D_1f__GCB10 |           1|     13574|
+|13    |tanh_2D_1f__GCB11 |           1|     22224|
+|14    |tanh_2D_1f__GCB12 |           1|     33246|
+|15    |tanh_2D_1f__GCB13 |           1|     24080|
+|16    |tanh_2D_1f__GCB14 |           1|     28112|
+|17    |tanh_2D_1f__GCB15 |           1|     25710|
+|18    |tanh_2D_1f__GCB16 |           1|     31571|
+|19    |tanh_2D_1f__GCB17 |           1|     19697|
+|20    |tanh_2D_1f__GCB18 |           1|     24077|
+|21    |tanh_2D_1f__GCB19 |           1|     17629|
+|22    |tanh_2D_1f__GCB20 |           1|     28183|
+|23    |tanh_2D_1f__GCB21 |           1|      7609|
+|24    |tanh_2D_1f__GCB22 |           1|     12058|
+|25    |tanh_2D_1f__GCB23 |           1|     15101|
+|26    |tanh_2D_1f__GCB24 |           1|     22333|
+|27    |tanh_2D_1f__GCB25 |           1|     25633|
+|28    |tanh_2D_1f__GCB26 |           1|     29446|
+|29    |tanh_2D_1f__GCB27 |           1|     18591|
+|30    |tanh_2D_1f__GCB28 |           1|     12870|
+|31    |tanh_2D_1f__GCB29 |           1|     16386|
+|32    |tanh_2D_1f__GCB30 |           1|     28018|
+|33    |tanh_2D_1f__GCB31 |           1|      7574|
+|34    |tanh_2D_1f__GCB32 |           1|      9703|
+|35    |tanh_2D_1f__GCB33 |           1|     14851|
+|36    |tanh_2D_1f__GCB34 |           1|     26622|
+|37    |tanh_2D_1f__GCB35 |           1|     26914|
+|38    |tanh_2D_1f__GCB36 |           1|     32760|
+|39    |tanh_2D_1f__GCB37 |           1|     26179|
+|40    |tanh_2D_1f__GCB38 |           1|     12870|
+|41    |tanh_2D_1f__GCB39 |           1|     27358|
+|42    |tanh_2D_1f__GCB40 |           1|     22952|
+|43    |tanh_2D_1f__GCB41 |           1|     27431|
+|44    |tanh_2D_1f__GCB42 |           1|     30314|
+|45    |tanh_2D_1f__GCB43 |           1|     29430|
++------+------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 6     
+	   3 Input     25 Bit       Adders := 12    
+	   3 Input      8 Bit       Adders := 50    
+	   4 Input      8 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---Registers : 
+	               32 Bit    Registers := 786   
+	                5 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 70    
+	   2 Input     24 Bit        Muxes := 30    
+	   2 Input     23 Bit        Muxes := 32    
+	   2 Input      8 Bit        Muxes := 318   
+	  23 Input      8 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 322   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tanh_2D_1f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 786   
+	                5 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 28    
+Module fpmull__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmull__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmull__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fpmull 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+Module fp_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1223.422 ; gain = 1000.617
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design tanh_2D_1f has unconnected port enable
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][8]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][19]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][6]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][25]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][23]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][18]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][16]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][15]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][13]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][9]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][5]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][3]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][2]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][1]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][14]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][20]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][11]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][0]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][7]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][24]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][26]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][17]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][22]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][21]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][27]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][12]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][10]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "out_tanh_reg[0][4]" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:43 . Memory (MB): peak = 1402.660 ; gain = 1179.855
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:36 ; elapsed = 00:02:43 . Memory (MB): peak = 1402.660 ; gain = 1179.855
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |tanh              |           2|     37146|
+|2     |tanh_2D_1f__GCB0  |           1|     31245|
+|3     |tanh_2D_1f__GCB1  |           1|     16098|
+|4     |tanh_2D_1f__GCB2  |           1|     28974|
+|5     |tanh_2D_1f__GCB3  |           1|     22301|
+|6     |tanh_2D_1f__GCB4  |           1|     34897|
+|7     |tanh_2D_1f__GCB5  |           1|     10511|
+|8     |tanh_2D_1f__GCB6  |           1|     32799|
+|9     |tanh_2D_1f__GCB7  |           1|      8768|
+|10    |tanh_2D_1f__GCB8  |           1|     12123|
+|11    |tanh_2D_1f__GCB9  |           1|     26208|
+|12    |tanh_2D_1f__GCB10 |           1|     13574|
+|13    |tanh_2D_1f__GCB11 |           1|     22224|
+|14    |tanh_2D_1f__GCB12 |           1|     33246|
+|15    |tanh_2D_1f__GCB13 |           1|     24080|
+|16    |tanh_2D_1f__GCB14 |           1|     28112|
+|17    |tanh_2D_1f__GCB15 |           1|     25710|
+|18    |tanh_2D_1f__GCB16 |           1|     31571|
+|19    |tanh_2D_1f__GCB17 |           1|     19697|
+|20    |tanh_2D_1f__GCB18 |           1|     24077|
+|21    |tanh_2D_1f__GCB19 |           1|     17629|
+|22    |tanh_2D_1f__GCB20 |           1|     28183|
+|23    |tanh_2D_1f__GCB21 |           1|      7609|
+|24    |tanh_2D_1f__GCB22 |           1|     12058|
+|25    |tanh_2D_1f__GCB23 |           1|     15101|
+|26    |tanh_2D_1f__GCB24 |           1|     22333|
+|27    |tanh_2D_1f__GCB25 |           1|     25633|
+|28    |tanh_2D_1f__GCB26 |           1|     29446|
+|29    |tanh_2D_1f__GCB27 |           1|     18591|
+|30    |tanh_2D_1f__GCB28 |           1|     12870|
+|31    |tanh_2D_1f__GCB29 |           1|     16386|
+|32    |tanh_2D_1f__GCB30 |           1|     28018|
+|33    |tanh_2D_1f__GCB31 |           1|      7574|
+|34    |tanh_2D_1f__GCB32 |           1|      9703|
+|35    |tanh_2D_1f__GCB33 |           1|     14851|
+|36    |tanh_2D_1f__GCB34 |           1|     26622|
+|37    |tanh_2D_1f__GCB35 |           1|     26914|
+|38    |tanh_2D_1f__GCB36 |           1|     32760|
+|39    |tanh_2D_1f__GCB37 |           1|     26179|
+|40    |tanh_2D_1f__GCB38 |           1|     12870|
+|41    |tanh_2D_1f__GCB39 |           1|     27358|
+|42    |tanh_2D_1f__GCB40 |           1|     22952|
+|43    |tanh_2D_1f__GCB41 |           1|     27431|
+|44    |tanh_2D_1f__GCB42 |           1|     30314|
+|45    |tanh_2D_1f__GCB43 |           1|     29430|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\col_reg[0] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:05:36 . Memory (MB): peak = 1935.813 ; gain = 1713.008
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:01 ; elapsed = 00:05:36 . Memory (MB): peak = 1935.813 ; gain = 1713.008
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |tanh              |           2|      7491|
+|2     |tanh_2D_1f__GCB0  |           1|      1968|
+|3     |tanh_2D_1f__GCB1  |           1|      1226|
+|4     |tanh_2D_1f__GCB2  |           1|      2245|
+|5     |tanh_2D_1f__GCB3  |           1|      1640|
+|6     |tanh_2D_1f__GCB4  |           1|      4512|
+|7     |tanh_2D_1f__GCB5  |           1|       658|
+|8     |tanh_2D_1f__GCB6  |           1|      2406|
+|9     |tanh_2D_1f__GCB7  |           1|       556|
+|10    |tanh_2D_1f__GCB8  |           1|       674|
+|11    |tanh_2D_1f__GCB9  |           1|      1926|
+|12    |tanh_2D_1f__GCB10 |           1|       830|
+|13    |tanh_2D_1f__GCB11 |           1|      1746|
+|14    |tanh_2D_1f__GCB12 |           1|      2446|
+|15    |tanh_2D_1f__GCB13 |           1|      1800|
+|16    |tanh_2D_1f__GCB14 |           1|      1785|
+|17    |tanh_2D_1f__GCB15 |           1|      2448|
+|18    |tanh_2D_1f__GCB16 |           1|      2791|
+|19    |tanh_2D_1f__GCB17 |           1|      1528|
+|20    |tanh_2D_1f__GCB18 |           1|      1762|
+|21    |tanh_2D_1f__GCB19 |           1|      1133|
+|22    |tanh_2D_1f__GCB20 |           1|      2359|
+|23    |tanh_2D_1f__GCB21 |           1|       428|
+|24    |tanh_2D_1f__GCB22 |           1|       961|
+|25    |tanh_2D_1f__GCB23 |           1|       870|
+|26    |tanh_2D_1f__GCB24 |           1|      1710|
+|27    |tanh_2D_1f__GCB25 |           1|      2162|
+|28    |tanh_2D_1f__GCB26 |           1|      2158|
+|29    |tanh_2D_1f__GCB27 |           1|      1198|
+|30    |tanh_2D_1f__GCB28 |           1|       768|
+|31    |tanh_2D_1f__GCB29 |           1|       969|
+|32    |tanh_2D_1f__GCB30 |           1|      1621|
+|33    |tanh_2D_1f__GCB31 |           1|       398|
+|34    |tanh_2D_1f__GCB32 |           1|       463|
+|35    |tanh_2D_1f__GCB33 |           1|      1305|
+|36    |tanh_2D_1f__GCB34 |           1|      2006|
+|37    |tanh_2D_1f__GCB35 |           1|      2009|
+|38    |tanh_2D_1f__GCB36 |           1|      2452|
+|39    |tanh_2D_1f__GCB37 |           1|     25127|
+|40    |tanh_2D_1f__GCB38 |           1|       768|
+|41    |tanh_2D_1f__GCB39 |           1|      2181|
+|42    |tanh_2D_1f__GCB40 |           1|      1731|
+|43    |tanh_2D_1f__GCB41 |           1|      1855|
+|44    |tanh_2D_1f__GCB42 |           1|      2315|
+|45    |tanh_2D_1f__GCB43 |           1|      2098|
++------+------------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:01 ; elapsed = 00:05:36 . Memory (MB): peak = 1935.813 ; gain = 1713.008
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:05:36 . Memory (MB): peak = 1935.813 ; gain = 1713.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |tanh              |           2|      7491|
+|2     |tanh_2D_1f__GCB0  |           1|      1968|
+|3     |tanh_2D_1f__GCB1  |           1|      1226|
+|4     |tanh_2D_1f__GCB2  |           1|      2245|
+|5     |tanh_2D_1f__GCB3  |           1|      1640|
+|6     |tanh_2D_1f__GCB4  |           1|      4512|
+|7     |tanh_2D_1f__GCB5  |           1|       658|
+|8     |tanh_2D_1f__GCB6  |           1|      2406|
+|9     |tanh_2D_1f__GCB7  |           1|       556|
+|10    |tanh_2D_1f__GCB8  |           1|       674|
+|11    |tanh_2D_1f__GCB9  |           1|      1926|
+|12    |tanh_2D_1f__GCB10 |           1|       830|
+|13    |tanh_2D_1f__GCB11 |           1|      1746|
+|14    |tanh_2D_1f__GCB12 |           1|      2446|
+|15    |tanh_2D_1f__GCB13 |           1|      1800|
+|16    |tanh_2D_1f__GCB14 |           1|      1785|
+|17    |tanh_2D_1f__GCB15 |           1|      2448|
+|18    |tanh_2D_1f__GCB16 |           1|      2791|
+|19    |tanh_2D_1f__GCB17 |           1|      1528|
+|20    |tanh_2D_1f__GCB18 |           1|      1762|
+|21    |tanh_2D_1f__GCB19 |           1|      1133|
+|22    |tanh_2D_1f__GCB20 |           1|      2359|
+|23    |tanh_2D_1f__GCB21 |           1|       428|
+|24    |tanh_2D_1f__GCB22 |           1|       961|
+|25    |tanh_2D_1f__GCB23 |           1|       870|
+|26    |tanh_2D_1f__GCB24 |           1|      1710|
+|27    |tanh_2D_1f__GCB25 |           1|      2162|
+|28    |tanh_2D_1f__GCB26 |           1|      2158|
+|29    |tanh_2D_1f__GCB27 |           1|      1198|
+|30    |tanh_2D_1f__GCB28 |           1|       768|
+|31    |tanh_2D_1f__GCB29 |           1|       969|
+|32    |tanh_2D_1f__GCB30 |           1|      1621|
+|33    |tanh_2D_1f__GCB31 |           1|       398|
+|34    |tanh_2D_1f__GCB32 |           1|       463|
+|35    |tanh_2D_1f__GCB33 |           1|      1305|
+|36    |tanh_2D_1f__GCB34 |           1|      2006|
+|37    |tanh_2D_1f__GCB35 |           1|      2009|
+|38    |tanh_2D_1f__GCB36 |           1|      2452|
+|39    |tanh_2D_1f__GCB37 |           1|     25127|
+|40    |tanh_2D_1f__GCB38 |           1|       768|
+|41    |tanh_2D_1f__GCB39 |           1|      2181|
+|42    |tanh_2D_1f__GCB40 |           1|      1731|
+|43    |tanh_2D_1f__GCB41 |           1|      1855|
+|44    |tanh_2D_1f__GCB42 |           1|      2315|
+|45    |tanh_2D_1f__GCB43 |           1|      2098|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:18 ; elapsed = 00:05:53 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:24 ; elapsed = 00:05:59 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:24 ; elapsed = 00:06:00 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:06:02 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:06:02 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:06:03 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   222|
+|3     |DSP48E2 |    52|
+|4     |LUT1    |   312|
+|5     |LUT2    |   847|
+|6     |LUT3    |  4175|
+|7     |LUT4    |  1839|
+|8     |LUT5    |  4504|
+|9     |LUT6    | 18455|
+|10    |MUXF7   |  2244|
+|11    |MUXF8   |   896|
+|12    |FDRE    | 25376|
+|13    |FDSE    |     8|
+|14    |LD      |    48|
+|15    |IBUF    | 25089|
+|16    |OBUF    | 25088|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------------+----------+-------+
+|      |Instance                      |Module    |Cells  |
++------+------------------------------+----------+-------+
+|1     |top                           |          | 109156|
+|2     |  \genblk1[0].tanh_obj1       |tanh      |  15525|
+|3     |    \genblk1[0].adder2        |fp_add_15 |     50|
+|4     |    \genblk1[0].adder3        |fp_add_16 |     37|
+|5     |    \genblk1[0].adder4        |fp_add_17 |    535|
+|6     |    \genblk1[0].multiplier1   |fpmull_18 |   2021|
+|7     |    \genblk1[0].multiplier10  |fpmull_19 |     40|
+|8     |    \genblk1[0].multiplier11  |fpmull_20 |     91|
+|9     |    \genblk1[0].multiplier12  |fpmull_21 |     61|
+|10    |    \genblk1[0].multiplier13  |fpmull_22 |     59|
+|11    |    \genblk1[0].multiplier14  |fpmull_23 |    134|
+|12    |    \genblk1[0].multiplier15  |fpmull_24 |     89|
+|13    |    \genblk1[0].multiplier2   |fpmull_25 |     36|
+|14    |    \genblk1[0].multiplier3   |fpmull_26 |     72|
+|15    |    \genblk1[0].multiplier5   |fpmull_27 |     32|
+|16    |    \genblk1[0].multiplier6   |fpmull_28 |     81|
+|17    |    \genblk1[0].multiplier7   |fpmull_29 |     52|
+|18    |    \genblk1[0].multiplier8   |fpmull_30 |     56|
+|19    |  \genblk1[0].tanh_obj2       |tanh_0    |   5638|
+|20    |    \genblk1[0].adder2        |fp_add    |     50|
+|21    |    \genblk1[0].adder3        |fp_add_1  |     37|
+|22    |    \genblk1[0].adder4        |fp_add_2  |    535|
+|23    |    \genblk1[0].multiplier1   |fpmull    |   1928|
+|24    |    \genblk1[0].multiplier10  |fpmull_3  |     40|
+|25    |    \genblk1[0].multiplier11  |fpmull_4  |     91|
+|26    |    \genblk1[0].multiplier12  |fpmull_5  |     61|
+|27    |    \genblk1[0].multiplier13  |fpmull_6  |     59|
+|28    |    \genblk1[0].multiplier14  |fpmull_7  |    134|
+|29    |    \genblk1[0].multiplier15  |fpmull_8  |     89|
+|30    |    \genblk1[0].multiplier2   |fpmull_9  |     36|
+|31    |    \genblk1[0].multiplier3   |fpmull_10 |     72|
+|32    |    \genblk1[0].multiplier5   |fpmull_11 |     32|
+|33    |    \genblk1[0].multiplier6   |fpmull_12 |     81|
+|34    |    \genblk1[0].multiplier7   |fpmull_13 |     52|
+|35    |    \genblk1[0].multiplier8   |fpmull_14 |     56|
++------+------------------------------+----------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:33 ; elapsed = 00:06:09 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:32 ; elapsed = 00:06:07 . Memory (MB): peak = 2030.813 ; gain = 1765.199
+Synthesis Optimization Complete : Time (s): cpu = 00:02:33 ; elapsed = 00:06:09 . Memory (MB): peak = 2030.813 ; gain = 1808.008
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'tanh_2D_1f' is not ideal for floorplanning, since the cellview 'tanh_2D_1f' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 160 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25316 instances were transformed.
+  (CARRY4) => CARRY8: 126 instances
+  BUFG => BUFGCE: 1 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 52 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 25089 instances
+  LD => LDCE: 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:05 ; elapsed = 00:06:40 . Memory (MB): peak = 2030.813 ; gain = 1795.367
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2030.813 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2030.813 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 07 16:06:14 2020..

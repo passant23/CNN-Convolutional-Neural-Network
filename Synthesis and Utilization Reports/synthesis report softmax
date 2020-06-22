@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Jun 07 09:41:11 2020
+# Process ID: 11876
+# Log file: C:/Users/Maria/Desktop/synth/projectt/projectt.runs/synth_1/softmax_fn.vds
+# Journal file: C:/Users/Maria/Desktop/synth/projectt/projectt.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source softmax_fn.tcl -notrace
+Command: synth_design -top softmax_fn -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 265.223 ; gain = 52.668
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'softmax_fn' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/softmax_fn.v:23]
+	Parameter datawidth bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fp_add' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fp_add' (1#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:2]
+INFO: [Synth 8-638] synthesizing module 'fpmull' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_mul.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fpmull' (2#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_mul.v:2]
+INFO: [Synth 8-256] done synthesizing module 'softmax_fn' (3#1) [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/softmax_fn.v:23]
+WARNING: [Synth 8-3331] design softmax_fn has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 299.418 ; gain = 86.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 299.418 ; gain = 86.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 299.418 ; gain = 86.863
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+WARNING: [Synth 8-327] inferring latch for variable 'shift_cnt_reg' [C:/Users/Maria/Desktop/synth/tryproject/tryproject.srcs/sources_1/new/fp_add.v:36]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 329.512 ; gain = 116.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 6     
+	   3 Input     25 Bit       Adders := 12    
+	   3 Input      8 Bit       Adders := 34    
+	   4 Input      8 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 38    
+	   2 Input     24 Bit        Muxes := 30    
+	   2 Input     23 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 318   
+	  23 Input      8 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 294   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fp_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 53    
+	  23 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+Module fpmull 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 662.727 ; gain = 450.172
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+INFO: [Synth 8-5545] ROM "flpout" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP flpout1, operation Mode is: A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: Generating DSP flpout1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+DSP Report: operator flpout1 is absorbed into DSP flpout1.
+WARNING: [Synth 8-3331] design softmax_fn has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.047 ; gain = 451.492
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.047 ; gain = 451.492
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | A*B            | No           | 25     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|fpmull      | (PCIN>>17)+A*B | No           | 25     | 8      | 31     | 25     | 31     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 809.336 ; gain = 596.781
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 809.336 ; gain = 596.781
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 809.336 ; gain = 596.781
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 809.336 ; gain = 596.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 887.016 ; gain = 674.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY8  |   104|
+|3     |DSP48E2 |    20|
+|4     |LUT1    |   222|
+|5     |LUT2    |   358|
+|6     |LUT3    |   557|
+|7     |LUT4    |   611|
+|8     |LUT5    |   865|
+|9     |LUT6    |  1654|
+|10    |MUXF7   |     5|
+|11    |FDRE    |    32|
+|12    |LD      |    48|
+|13    |IBUF    |    33|
+|14    |OBUF    |    32|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------+----------+------+
+|      |Instance                   |Module    |Cells |
++------+---------------------------+----------+------+
+|1     |top                        |          |  4542|
+|2     |  \genblk1[0].add_12terms  |fp_add    |  1759|
+|3     |  \genblk1[0].add_23terms  |fp_add_0  |    56|
+|4     |  \genblk1[0].add_34terms  |fp_add_1  |   188|
+|5     |  \genblk1[0].add_45terms  |fp_add_2  |    54|
+|6     |  \genblk1[0].add_56terms  |fp_add_3  |   114|
+|7     |  \genblk1[0].add_67terms  |fp_add_4  |   400|
+|8     |  \genblk1[0].mull_2       |fpmull    |   107|
+|9     |  \genblk1[0].mull_3       |fpmull_5  |    88|
+|10    |  \genblk1[0].mull_4       |fpmull_6  |    53|
+|11    |  \genblk1[0].mull_5       |fpmull_7  |    78|
+|12    |  \genblk1[0].mull_6       |fpmull_8  |    70|
+|13    |  \genblk1[0].mull_x2      |fpmull_9  |   690|
+|14    |  \genblk1[0].mull_x3      |fpmull_10 |    35|
+|15    |  \genblk1[0].mull_x4      |fpmull_11 |    98|
+|16    |  \genblk1[0].mull_x5      |fpmull_12 |    55|
+|17    |  \genblk1[0].mull_x6      |fpmull_13 |    40|
++------+---------------------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 887.688 ; gain = 675.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 887.688 ; gain = 652.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 887.688 ; gain = 675.133
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 102 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 20 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 33 instances
+  LD => LDCE: 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 894.629 ; gain = 672.711
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 894.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 07 09:41:42 2020...
